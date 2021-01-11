@@ -4,7 +4,7 @@ plugin-hadith-wordpress-islamplus
 
 # FOR DEVELOPERS
 
-- first of all please install Mockoon for DEV area
+- first of all please [install Mockoon](https://mockoon.com/#download) for DEV area
 - after install Mockoon open and import mockoon.json
 
 # Installation

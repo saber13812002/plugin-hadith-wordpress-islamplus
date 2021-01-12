@@ -15,4 +15,19 @@ plugin-hadith-wordpress http://islamplus.net
 
 # How to use it
 
-- put shortcode in your wordpress everywhere you want
+- put this shortcode [islamplus_hadith] in desired place in your wordpress everywhere you want
+
+- if you want to use with php code you can use
+
+  ```
+  do_shortcode("[islamplus_hadith context='hadith|quran' language='arabic|english'] theme='default|33percent|25percent'");
+  ```
+
+  default: is full width
+  33percent: is for 33 percent
+  25percent
+
+# Special thanks to
+
+- https://weichie.com/blog/curl-api-calls-with-php/
+-

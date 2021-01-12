@@ -30,4 +30,4 @@ plugin-hadith-wordpress http://islamplus.net
 # Special thanks to
 
 - https://weichie.com/blog/curl-api-calls-with-php/
--
+- https://islamplus.net

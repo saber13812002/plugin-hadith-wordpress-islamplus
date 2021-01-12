@@ -17,6 +17,10 @@ plugin-hadith-wordpress http://islamplus.net
 
 - put this shortcode [islamplus_hadith] in desired place in your wordpress everywhere you want
 
+  for example:
+
+  ![use hadith shortcode in wordpress editor](use-hadith-shortcode-in-editor-wordpress.png)
+
 - if you want to use with php code you can use
 
   ```

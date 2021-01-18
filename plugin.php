@@ -35,7 +35,8 @@ function getHaditByCallApi($context, $language, $theme)
     $curl = curl_init();
 
     // set our url with curl_setopt()
-    curl_setopt($curl, CURLOPT_URL, "http://localhost:3000/api/" . $context);
+    $url = "http://api.islamplus.net/api/" . $context . "/list?count=1&lang=fa";
+    curl_setopt($curl, CURLOPT_URL, $url);
 
     // return the transfer as a string, also with setopt()
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
@@ -60,11 +61,18 @@ function getHaditByCallApi($context, $language, $theme)
     // (deletes the variable made by curl_init)
     curl_close($curl);
 
-    $islamplusHadith = json_decode($output);
+    $islamplusHadithResponse = json_decode($output);
+    $islamplusHadith = $islamplusHadithResponse->Hadith[0];
     $shortcode  = "<p>";
-    $shortcode .= "$islamplusHadith->text <br>";
-    $shortcode .= "<a href=$islamplusHadith->author_link>$islamplusHadith->author </a> <br>";
-    $shortcode .= "<a href=$islamplusHadith->resource_link/?redirect_url=$islamplusHadith->redirect_url>$islamplusHadith->resource  </a><br>";
+    $shortcode .= "$islamplusHadith->ArabicText <br>";
+    // $shortcode .= "<a href=$islamplusHadith->url/?redirect_url=$current_url> $islamplusHadith->Persian </a> <br>";
+    $shortcode .= "<a href=https://islamplus.net/English/hadithposter?hadithID=$islamplusHadith->HadithID&device=Mobile&lang=Persian> $islamplusHadith->Persian </a> <br>";
+    // $shortcode .= "<a href=$islamplusHadith->author_link>$islamplusHadith->author ";
+
+    // $shortcode .= " islamplus </a><br>";
+    // $shortcode .= "$islamplusHadith->text <br>";
+    // $shortcode .= "<a href=$islamplusHadith->author_link>$islamplusHadith->author </a> <br>";
+    // $shortcode .= "<a href=$islamplusHadith->resource_link/?redirect_url=$islamplusHadith->redirect_url>$islamplusHadith->resource  </a><br>";
     $shortcode .= "</p>";
 
     return $shortcode;

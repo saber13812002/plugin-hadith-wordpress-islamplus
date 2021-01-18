@@ -7,6 +7,14 @@ plugin-hadith-wordpress http://islamplus.net
 - first of all please [install Mockoon](https://mockoon.com/#download) for DEV environment
 - after install Mockoon open it then import mockoon.json
 
+# persian article
+
+[persian article](https://vrgl.ir/APQYI)
+
+# persian video tutorial
+
+[persian video tutorial](https://narenjitv.com/vs/M8J)
+
 # Installation
 
 - clone this project then move this folder into your wp-content/plugins

@@ -34,13 +34,17 @@ for example:
 هر جای تم که دلتون خواست میتونید کد پی اچ پی زیر رو کپی کنید و کانفیگ انجام بدید
 
 ```
-do_shortcode("[islamplus_hadith]");
+<?php
+	echo do_shortcode("[islamplus_hadith]");
+?>
 ```
 
 یا
 
 ```
-do_shortcode("[islamplus_hadith context='hadith|quran' language='arabic|english' theme='default|33percent|25percent']");
+<?php
+	echo do_shortcode("[islamplus_hadith context='hadith|quran' language='arabic|english' theme='default|33percent|25percent']");
+?>
 ```
 
 default: is full width

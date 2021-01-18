@@ -17,14 +17,18 @@ plugin-hadith-wordpress http://islamplus.net
 
 - put this shortcode [islamplus_hadith] in desired place in your wordpress everywhere you want
 
-  for example:
+or this:
 
-  ![use hadith shortcode in wordpress editor](use-hadith-shortcode-in-editor-wordpress.png)
+`[islamplus_hadith context='hadith|quran' language='arabic|english' theme='default|33percent|25percent']`
+
+for example:
+
+![use hadith shortcode in wordpress editor](use-hadith-shortcode-in-editor-wordpress.png)
 
 - if you want to use with php code you can use
 
   ```
-  do_shortcode("[islamplus_hadith context='hadith|quran' language='arabic|english'] theme='default|33percent|25percent'");
+  do_shortcode("[islamplus_hadith context='hadith|quran' language='arabic|english' theme='default|33percent|25percent']");
   ```
 
   default: is full width
